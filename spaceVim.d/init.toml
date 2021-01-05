@@ -28,6 +28,9 @@
     autocomplete_method = "coc"
     vim_help_language = "cn"
     disabled_plugins = ["clighter8"]
+    
+    default_indent = 4
+    expand_tab = true
 
 # Enable autocomplete layer
 [[layers]]
