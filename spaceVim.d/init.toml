@@ -58,3 +58,5 @@
   repo = "itchyny/vim-cursorword"
 [[custom_plugins]]
   repo = "puremourning/vimspector"
+[[custom_plugins]]
+  repo = "jiangmiao/auto-pairs"
