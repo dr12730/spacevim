@@ -19,7 +19,13 @@ my sapcevim configuration
    mv spacevim ~/.SpaceVim.d
    ```
 
-4. open neovim, wait for install
+4. copy coc-setting
+
+    ```bash
+    ln ~/.SpaceVim.d/coc-settings.json ~/.config/nvim/coc-settings.json
+    ```
+
+5. open neovim, wait for install
 
     ```bash
     nvim
