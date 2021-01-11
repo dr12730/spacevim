@@ -1,11 +1,12 @@
 {
+
     "coc.preferences.rootPatterns":[".git", ".hg", ".projections.json", ".root"],
 
-    "python.jediEnabled": false,
+    "suggest.enablePreselect":true,
     "suggest.enablePreview":true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     "suggest.autoTrigger": "always",
-    "suggest.triggerAfterInsertEnter": false,
+    "suggest.triggerAfterInsertEnter": true,
     "suggest.timeout": 500,
     "suggest.noselect": false,
     "suggest.detailField":"abbr",
