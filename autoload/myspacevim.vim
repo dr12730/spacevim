@@ -3,9 +3,15 @@ function! myspacevim#before() abort
   let default_opt = profile.default_opts + ['--no-ignore-vcs']
   call SpaceVim#mapping#search#profile({'rg' : {'default_opts' : default_opt}})
 
-  let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-rls', 'coc-yank', 'coc-snippets', 'coc-clangd']
+  let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-rls', 'coc-yank', 'coc-snippets', ]
   call SpaceVim#plugins#tasks#reg_provider(function('s:make_tasks'))
   call SpaceVim#plugins#tasks#reg_provider(funcref('s:cargo_task'))
+
+  " GoTo code navigation.
+  nmap <silent> <space>gl <Plug>(coc-definition)
+  nmap <silent> <space>gt <Plug>(coc-type-definition)
+  nmap <silent> <space>gi <Plug>(coc-implementation)
+  nmap <silent> <space>gr <Plug>(coc-references)
 
   "----------------------------------------------------------------------
   " 设置 CTRL+HJKL 移动光标（INSERT 模式偶尔需要移动的方便些）
